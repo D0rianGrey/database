@@ -1,5 +1,5 @@
 {
-  "name": "DataBase",
+  "name": "database",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^7.1.0",
+    "cypress-sql-server": "^1.0.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5"
   }

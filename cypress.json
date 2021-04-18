@@ -1,0 +1,12 @@
+{
+  "env": {
+    "db": {
+      "host": "localhost",
+      "user": "root",
+      "password": "password",
+      "database": "hello_world_db",
+      "options": {
+      }
+    }
+  }
+}
