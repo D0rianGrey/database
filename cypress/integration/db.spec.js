@@ -14,9 +14,10 @@ describe("Test DB", () => {
                 //     for (let j = 0; j < 2; j++){
                 //     }
                 // }
+
                 let x = Array.from(text);
                 x.forEach((element) => {
-                    console.log(element)
+                    console.log(element);
                 })
                 console.log(text);
                 for (let subArr of text) {
