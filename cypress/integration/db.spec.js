@@ -14,10 +14,16 @@ describe("Test DB", () => {
                 //     for (let j = 0; j < 2; j++){
                 //     }
                 // }
-                console.log(text)
-                for (let subArr of text){
-                    for (let element in subArr){
-                        console.log(`${element} : ${subArr[element]}`)
+                let x = Array.from(text);
+                x.forEach((element) => {
+                    console.log(element)
+                })
+                console.log(text);
+                for (let subArr of text) {
+                    for (let element in subArr) {
+                        if (subArr.hasOwnProperty(element)) {
+                            console.log(`${element} : ${subArr[element]}`)
+                        }
                     }
                 }
             });
