@@ -1,10 +1,10 @@
 {
   "env": {
     "db": {
-      "host": "localhost",
-      "user": "root",
-      "password": "password",
-      "database": "hello_world_db",
+      "host": "admin-dev.projects.local",
+      "user": "qc",
+      "password": "4ls1wFwgx9W4ZltL!",
+      "database": "ss_ps_db",
       "options": {
       }
     }
