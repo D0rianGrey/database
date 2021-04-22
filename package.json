@@ -13,6 +13,10 @@
     "cypress": "^7.1.0",
     "cypress-sql-server": "^1.0.0",
     "mysql": "^2.18.1",
-    "mysql2": "^2.2.5"
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "playwright": "^1.10.0",
+    "puppeteer": "^8.0.0",
+    "selenium-webdriver": "^4.0.0-beta.3"
   }
 }
