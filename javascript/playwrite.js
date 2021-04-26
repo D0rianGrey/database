@@ -1,5 +1,5 @@
 const {chromium} = require('playwright');
-const { devices } = require('playwright');
+const {devices} = require('playwright');
 
 (async () => {
     //Iphone 11
@@ -10,7 +10,7 @@ const { devices } = require('playwright');
     // await page.goto('https://www.google.com.ua/');
     // await browser.close();
 
-   //Just browser
+    //Just browser
     const browser = await chromium.launch({headless: false});
     const page = await browser.newPage();
     await page.goto('https://www.google.com.ua/');
