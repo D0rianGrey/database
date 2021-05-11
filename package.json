@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d dist --presets es2015",
+    "watch": "babel src -d dist --presets es2015 -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +15,7 @@
     "allure-commandline": "^2.13.8",
     "cypress": "^7.1.0",
     "cypress-sql-server": "^1.0.0",
+    "esm": "^3.2.25",
     "mocha-allure-reporter": "^1.4.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
@@ -20,5 +23,15 @@
     "playwright": "^1.10.0",
     "puppeteer": "^8.0.0",
     "selenium-webdriver": "^4.0.0-beta.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-transform-modules-commonjs": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
