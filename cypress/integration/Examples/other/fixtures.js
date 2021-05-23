@@ -1,5 +1,4 @@
 describe('fixtures', function () {
-
     before(() => {
         cy.fixture('example.json').as('data');
     })
@@ -10,5 +9,12 @@ describe('fixtures', function () {
         }).then((data) => {
             cy.log(data.email);
         })
+    });
+    it.only('fixtures', function () {
+        cy.fixture('example.json').then(({name, email, body}) => {
+            cy.log(name);
+            cy.log(email);
+            cy.log(body);
+        });
     });
 });
