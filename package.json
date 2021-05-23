@@ -2,6 +2,9 @@
   "name": "database",
   "version": "1.0.0",
   "description": "",
+  "quokka": {
+    "babel": true
+  },
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist --presets es2015",
@@ -24,7 +27,12 @@
     "node-fetch": "^2.6.1",
     "playwright": "^1.10.0",
     "puppeteer": "^8.0.0",
-    "selenium-webdriver": "^4.0.0-beta.3"
+    "selenium-webdriver": "^4.0.0-beta.3",
+    "typescript": "^4.2.4",
+    "@bahmutov/add-typescript-to-cypress": "^2.1.2",
+    "@cypress/webpack-preprocessor": "^5.8.0",
+    "ts-loader": "^9.2.2",
+    "webpack": "^5.37.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.16",
