@@ -1,6 +1,7 @@
-const {chromium} = require('playwright');
+const {chromium} = require("@playwright/test");
+const { test, expect } = require('@playwright/test');
 
-(async () => {
+test('basic test', async ({ page }) => {
     const browser = await chromium.launch({headless: false});
     const context = await browser.newContext({ignoreHTTPSErrors: true});
     const adminMode = await context.newPage();
@@ -15,6 +16,4 @@ const {chromium} = require('playwright');
     await adminMode.click("#KmsiCheckboxField");
     await adminMode.click("#idSIButton9");
     await careerMode.click("xpath=//a[@class='freelance-btn']");
-
-    //await browser.close();
-})();
+});
